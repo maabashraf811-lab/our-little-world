@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <div id="qrcode-container" style="display: flex; justify-content: center; margin-top: 20px;">
+    <div id="qrcode"></div>
+</div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Little World 🤍</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- خط عربي أنيق من Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Reem+Kufi:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- الشاشة الأولى: البداية -->
+    <section id="hero" class="screen">
+        <div class="card hero-card">
+            <div class="main-img-wrapper">
+                <img src="assets/main.jpg" alt="Our Main Photo" id="mainPhoto">
+            </div>
+            <h1>Our Little World 🤍</h1>
+            <p>A memory to keep 🥰</p>
+            <button id="openBtn" class="btn">Open Our World ✨</button>
+        </div>
+    </section>
+
+    <!-- الشاشة الثانية: المحتوى الرئيسي -->
+    <main id="content" class="screen hidden">
+
+        <!-- قسم عداد الوقت (Real Digital Timer) -->
+        <section class="sec-counter scroll-effect">
+            <h2>Our Days Together ⏳</h2>
+
+            <!-- الإطار الخارجي للتايمر -->
+            <div class="digital-timer-frame">
+                <div class="digital-timer">
+                    <div class="timer-segment">
+                        <span id="days">00</span>
+                        <label>DAYS</label>
+                    </div>
+                    <div class="timer-colon">:</div>
+                    <div class="timer-segment">
+                        <span id="hours">00</span>
+                        <label>HOURS</label>
+                    </div>
+                    <div class="timer-colon">:</div>
+                    <div class="timer-segment">
+                        <span id="minutes">00</span>
+                        <label>MINS</label>
+                    </div>
+                    <div class="timer-colon">:</div>
+                    <div class="timer-segment">
+                        <span id="seconds">00</span>
+                        <label>SECS</label>
+                    </div>
+                </div>
+            </div>
+
+            <p class="counter-text">Every day with you is a new favorite memory 🤍</p>
+        </section>
+
+        <!-- قسم الصورة المميزة -->
+        <section class="sec-special-photo scroll-effect">
+            <h2>Our Special Moment ✨</h2>
+            <div class="special-photo-card">
+                <img src="assets/special-photo.jpg" alt="Special Moment">
+                <p class="caption">🤍</p>
+            </div>
+        </section>
+
+        <!-- قسم البولاراويد (Polaroid Gallery) -->
+        <section class="sec-polaroids scroll-effect">
+            <h2>Our Favorite Moments 📸</h2>
+            <div class="polaroid-grid">
+                <div class="polaroid">
+                    <img src="assets/photo1.jpg" alt="Memory 1">
+                    <p class="caption">Our first picture 😍</p>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/photo2.jpg" alt="Memory 2">
+                    <p class="caption">A day never forget ✨✨</p>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/photo3.jpg" alt="Memory 3">
+                    <p class="caption">🥰🥰🥰🥰🥰🥰🥰</p>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/photo4.jpg" alt="Memory 4">
+                    <p class="caption">This >>>😊🤍</p>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/photo5.jpg" alt="Memory 5">
+                    <p class="caption">One of my favorites 💕</p>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/photo9.jpg" alt="Memory 9">
+                    <p class="caption">this day😍😍</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم معرض الصور المجمع (Sweet Memories Gallery) -->
+        <section class="sec-gallery scroll-effect">
+            <h2>More Sweet Memories 🖼️</h2>
+            <div class="photo-gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/photo7.jpg" alt="Memory 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo8.jpg" alt="Memory 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo10.jpg" alt="Memory 10">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo6.jpg" alt="Memory 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo12.jpg" alt="Memory 12">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo13.jpg" alt="Memory 13">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo19.jpg" alt="Memory 19">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo15.jpg" alt="Memory 15">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo16.jpg" alt="Memory 16">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo17.jpg" alt="Memory 17">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo18.jpg" alt="Memory 18">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/photo11.jpg" alt="Memory 11">
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الحاجات اللي بحبها فيك -->
+        <section class="sec-love scroll-effect">
+            <h2>Just Because You’re You 🤍</h2>
+            <ul class="love-list">
+                <li>💖 You make the little things feel special 🤍</li>
+                <li>💖 I hope you never feel like you have to hide the messy parts of yourself from me🤍</li>
+                <li>💖 I’m so happy that I get to make memories with you</li>
+                <li>💖 I hope you never forget how special you are to me 🫣 </li>
+                <li>💖 You’re one of my favorite parts of every day 🫶🏻</li>
+                <li>💖 I hope we keep collecting little stories that only we understand 😂 احم احم بس مش محرجه</li>
+            </ul>
+        </section>
+
+        <!-- قسم الخط الزمني (Timeline) -->
+        <section class="sec-timeline scroll-effect">
+            <h2>Our Timeline ⏳</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="date">16/7/2026</div>
+                    <p>The beginning of us 😮💕</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="date">8/8/2026</div>
+                    <p>Our engagement day 🎉</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الرسالة والمفاجأة -->
+        <section class="sec-letter scroll-effect">
+            <div class="letter-card">
+                <h2>A Message For You 💌</h2>
+                <p class="letter-text">
+                    Thank you for being in my life and for all the beautiful moments we share together.
+                    I’m so happy and lucky to have you by my side. You make my days a little brighter just by being you.
+                    I’m truly grateful for you, for us, and for every memory we’re making together. 🥺🥺❤️❤️❤️❤️❤️❤️❤️
+                </p>
+                <button id="surpriseBtn" class="btn">Tap here for a little surprise 🎁</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- عنصر الصوت الخلفي -->
+    <audio id="bgMusic" loop>
+        <source src="assets/song.mp3" type="audio/mpeg">
+        متصفحك لا يدعم تشغيل الصوت.
+    </audio>
+
+    <!-- نافذة المفاجأة (Popup Modal) -->
+    <div id="surpriseModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close-btn">&times;</span>
+            <h3></h3>
+            <p class="modal-text">
+                Remember this song? It wasn’t random. 🤍
+            </p>
+            <a href="https://youtu.be/t-sj9Lzffvs?si=Ms2NBakS4YsEOPCP" target="_blank" class="song-link-btn">
+                Listen 😇
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- مكتبة توليد الـ QR Code -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
