@@ -433,3 +433,13 @@ p {
 .hidden {
     display: none !important;
 }
+/* إخفاء أي عنصر QR code خارجي مضاف تلقائياً */
+img[src*="qr"], 
+iframe[src*="qr"], 
+div[class*="qr"], 
+div[id*="qr"],
+canvas {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
